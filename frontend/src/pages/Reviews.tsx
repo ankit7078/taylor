@@ -38,7 +38,7 @@ const Reviews = () => {
   // Fetch existing reviews
   const fetchReviews = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/reviews");
+      const res = await fetch("https://taylor-5dmr.onrender.com/api/reviews");
       const data = await res.json();
       setReviews(data);
     } catch (error) {
