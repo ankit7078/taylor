@@ -53,7 +53,7 @@ const Reviews = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/reviews", {
+      const res = await fetch("https://taylor-5dmr.onrender.com/api/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
